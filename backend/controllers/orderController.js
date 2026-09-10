@@ -8,8 +8,8 @@ const generateOrderNumber = require("../utils/generateOrderNumber");
 const sendOrderConfirmationEmail = require("../utils/sendOrderConfirmationEmail");
 const { asyncHandler } = require("../middleware/errorHandler");
 
-const DELIVERY_CHARGE = 99.0;
-const FREE_DELIVERY_THRESHOLD = 7000.0;
+const DELIVERY_CHARGE = 0;
+const FREE_DELIVERY_THRESHOLD = 0;
 const VALID_PAYMENT_METHODS = ["UPI", "Credit Card"];
 const RAZORPAY_PAYMENT_METHODS = ["UPI", "Credit Card"];
 
