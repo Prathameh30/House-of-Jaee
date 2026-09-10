@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6EF" />
+      <stop offset="55%" stop-color="#E8DCC8" />
+      <stop offset="100%" stop-color="#D9C8A8" />
+    </linearGradient>
+    <linearGradient id="drapeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7A1F2B" />
+      <stop offset="100%" stop-color="#5C1620" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgGrad)" />
+
+  <!-- Flowing draped saree silhouette, right-weighted composition -->
+  <path d="M900,0 C1050,80 1000,220 1150,300 C1300,380 1250,560 1400,650 C1500,710 1550,800 1600,900 L1600,0 Z" fill="url(#drapeGrad)" opacity="0.9" />
+  <path d="M980,0 C1100,90 1080,240 1220,320 C1360,400 1320,580 1460,660 C1540,710 1580,800 1600,900 L1600,0 Z" fill="#C9A961" opacity="0.18" />
+
+  <!-- Woven border accents -->
+  <g opacity="0.55">
+    <rect x="1000" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1007 852)" /><rect x="1042" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1049 852)" /><rect x="1084" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1091 852)" /><rect x="1126" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1133 852)" /><rect x="1168" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1175 852)" /><rect x="1210" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1217 852)" /><rect x="1252" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1259 852)" /><rect x="1294" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1301 852)" /><rect x="1336" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1343 852)" /><rect x="1378" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1385 852)" /><rect x="1420" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1427 852)" /><rect x="1462" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1469 852)" /><rect x="1504" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1511 852)" /><rect x="1546" y="845" width="14" height="14" fill="#C9A961" transform="rotate(45 1553 852)" />
+  </g>
+  <rect x="950" y="830" width="650" height="2" fill="#C9A961" opacity="0.5" />
+  <rect x="950" y="868" width="650" height="2" fill="#C9A961" opacity="0.5" />
+
+  <!-- Soft paisley-inspired motifs, left side, kept subtle -->
+  <g opacity="0.12" fill="#7A1F2B">
+    <ellipse cx="220" cy="200" rx="60" ry="90" transform="rotate(-20 220 200)" />
+    <ellipse cx="340" cy="420" rx="50" ry="75" transform="rotate(15 340 420)" />
+    <ellipse cx="160" cy="600" rx="55" ry="82" transform="rotate(-10 160 600)" />
+  </g>
+
+  <circle cx="1450" cy="160" r="70" fill="none" stroke="#C9A961" stroke-width="1.5" opacity="0.5" />
+  <circle cx="1450" cy="160" r="50" fill="none" stroke="#7A1F2B" stroke-width="1" opacity="0.4" />
+</svg>

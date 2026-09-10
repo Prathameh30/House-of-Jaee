@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-brown font-body;
+}
+
+h1, h2, h3, h4, h5 {
+  @apply font-display;
+}
+
+/* Signature element: a woven "zari border" divider, evoking the gold thread
+   border of a saree, used between major sections instead of a plain <hr>. */
+.zari-divider {
+  height: 10px;
+  position: relative;
+  background-image:
+    repeating-linear-gradient(90deg, transparent 0, transparent 14px, #C9A961 14px, #C9A961 16px),
+    linear-gradient(to right, transparent, #C9A961 10%, #C9A961 90%, transparent);
+  background-size: 100% 2px, 100% 1px;
+  background-position: center, top;
+  background-repeat: repeat-x, no-repeat;
+  opacity: 0.65;
+}
+
+.zari-divider::before,
+.zari-divider::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: #C9A961;
+  transform: translateX(-50%) rotate(45deg);
+}
+.zari-divider::before { top: 0; }
+.zari-divider::after { top: 2px; }
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #C9A961;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Custom scrollbar to match theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9C8A8;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A961;
+}
+
+/* Line clamp utility for product names */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Shared form input styling used across checkout, contact, auth forms */
+.input-field {
+  @apply w-full border border-beige-dark rounded-sm px-3.5 py-2.5 text-sm bg-cream/40
+    outline-none focus:border-maroon transition-colors text-brown placeholder:text-brown-light/60;
+}
