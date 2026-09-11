@@ -29,18 +29,7 @@ const forgotPasswordLimiter = rateLimit({
   legacyHeaders: false,
 });
 
-router.post(
-  "/login",
-  (req, res, next) => {
-    console.log("🔥 LOGIN ROUTE REACHED");
-    console.log("LOGIN BODY CHECK:", {
-      hasEmail: !!req.body?.email,
-      hasPassword: !!req.body?.password,
-    });
-    next();
-  },
-  adminAuthController.login,
-);
+router.post("/login", loginLimiter, adminAuthController.login);
 router.get("/me", requireAdmin, adminAuthController.getProfile);
 router.put("/me", requireAdmin, adminAuthController.updateProfile);
 router.put(
