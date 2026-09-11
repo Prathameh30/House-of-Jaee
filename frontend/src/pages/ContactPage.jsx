@@ -57,7 +57,7 @@ export default function ContactPage() {
           <InfoCard
             icon={FiPhone}
             title="Call Us"
-            lines={["+91 98765 43210", "Mon – Sat, 10 AM – 7 PM IST"]}
+            lines={["+91 7822876646", "Mon – Sat, 10 AM – 7 PM IST"]}
           />
           <InfoCard
             icon={FiMail}
